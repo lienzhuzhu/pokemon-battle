@@ -14,9 +14,9 @@ simple pokemon battle game for two players calling PokeApi
 * Made using JavaScript
 * AJAX calls made using XMLHttpRequest 
 * Debugged race issue problems including
- - Manipulating content that hasn't been loaded yet
- - Mistiming when trying to populate object member attributes with content from API 
- - Fixed these issues by adding buttons as hacks to ensure data has been retrieved completely from API
+  * Manipulating content that hasn't been loaded yet
+  * Mistiming when trying to populate object member attributes with content from API 
+  * Fixed these issues by adding buttons as hacks to ensure data has been retrieved completely from API
 
 ## Future
 
