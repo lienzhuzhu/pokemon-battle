@@ -1,0 +1,139 @@
+<!-- start page for pokemon game, players select characters here -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <link rel="icon" href="./pokeball.png" type="image/x-icon" id="favicon-id">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div id="initial-screen">
+
+        <div id="title-wrapper">
+            <img src="pokemon-logo.png" alt="logo" id="banner-logo">
+        </div>
+        
+        <div id="selection-wrapper">
+            <div id="player-one-selection-div" class="selection-div">
+                <h2 class="player-prompt-class">Player 1: Choose a Pokemon</h2>
+        
+                <select class="pokemon-select-class" id="player-one-pokemon-select">
+                    <!-- options from script go here -->
+                    <option value="pikachu">pikachu</option>
+                    <option value="charmander">charmander</option>
+                    <option value="bulbasaur">bulbasaur</option>
+                    <option value="squirtle">squirtle</option>
+                </select>
+
+                <div class="selection-preview-wrapper floating" id="player-one-preview">
+                    <!-- sprite shows up here on selection change -->
+                    <img id="sprite-preview-one" src="open-pokeball.png" alt="sprite" class="preview-sprite-class">
+                </div>
+            </div>
+
+            <div class="button-wrapper-container">
+                <div id="play-button-wrapper">
+                    <input type="button" value=" " id="play-button">
+                </div>  
+            </div>
+
+            <div id="player-two-selection-div" class="selection-div">
+                <h2 class="player-prompt-class">Player 2: Choose a Pokemon</h2>
+        
+                <select class="pokemon-select-class" id="player-two-pokemon-select">
+                    <!-- options from script go here -->
+                    <option value="pikachu">pikachu</option>
+                    <option value="charmander">charmander</option>
+                    <option value="bulbasaur">bulbasaur</option>
+                    <option value="squirtle">squirtle</option>
+                </select>
+
+                <div class="selection-preview-wrapper floating" id="player-two-preview">
+                    <!-- sprite shows up here on selection change -->
+                    <img id="sprite-preview-two" src="open-pokeball.png" alt="sprite" class="preview-sprite-class">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="game-page">
+
+        <div id="play-title-wrapper">
+            <h1 id="play-title">I Want To Be The Very Best!</h1>
+            <div id="start-button-wrapper">
+                <button class="start-and-quit" value=" " id="start-button">FIGHT</button>
+            </div>
+        </div>
+
+        <div id="game-play-wrapper">
+
+            <div id="player-one-div" class="player-wrapper">
+                <img class="game-sprite floating" id="player-one-sprite" src="open-pokeball.png" alt="sprite">
+                <div class="pokemon-stat-wrapper" id="player-one-stat-wrapper">
+                    <p class="pokemon-name-class" id="player-one-name">pokemon name</p>
+                    <div class="health-bar-wrapper" id="player-one-health-wrapper">
+                        <div class="health-bar-frame" id="player-one-health-bar-frame">
+                            <div class="health-bar" id="player-one-health-bar"></div>
+                        </div>
+
+                        <p class="health-stat" id="player-one-health-stat">hp here</p>
+                    </div>
+                </div>
+                <div class="moves-container" id="player-one-moves">
+                    <button value=" " class="move-button" id="p-1-move-1" data-player="One">foobar</button>
+                    <button value=" " class="move-button" id="p-1-move-2" data-player="One">foobar</button>
+                    <button value=" " class="move-button" id="p-1-move-3" data-player="One">foobar</button>
+                    <button value=" " class="move-button" id="p-1-move-4" data-player="One">foobar</button>
+                </div>
+            </div>
+        
+            <div id="player-two-div" class="player-wrapper">          
+                <img class="game-sprite floating" id="player-two-sprite" src="open-pokeball.png" alt="sprite">
+                <div class="pokemon-stat-wrapper" id="player-two-stat-wrapper">
+
+                    <p class="pokemon-name-class" id="player-two-name">pokemon name</p>
+
+                    <div class="health-bar-wrapper" id="player-two-health-wrapper">
+                        <div class="health-bar-frame" id="player-two-health-bar-frame">
+                            <div class="health-bar" id="player-two-health-bar"></div>
+                        </div>
+
+                        <p class="health-stat" id="player-two-health-stat">hp here</p>
+                    </div>
+                </div>
+                <div class="moves-container" id="player-two-moves">
+                    <button value=" " class="move-button" id="p-2-move-1" data-player="Two">foobar</button>
+                    <button value=" " class="move-button" id="p-2-move-2" data-player="Two">foobar</button>
+                    <button value=" " class="move-button" id="p-2-move-3" data-player="Two">foobar</button>
+                    <button value=" " class="move-button" id="p-2-move-4" data-player="Two">foobar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer-wrapper">
+            <div id="console-wrapper">
+                <p id="console">Press FIGHT To Play</p>
+            </div>
+            <button value=" " class="start-and-quit" id="quit-button">RUN</button>
+        </div>
+        
+        
+        
+            
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>
